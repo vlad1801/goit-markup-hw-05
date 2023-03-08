@@ -13,7 +13,7 @@
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" />
 		<link rel="stylesheet" href="./css/styles.css" />
 
-		<title>HW-04</title>
+		<title>HW-05</title>
 	</head>
 
 	<body>
@@ -24,13 +24,13 @@
 					<a href="./index.html" class="nav-logo link">Web<span class="nav-logo-studio">Studio</span></a>
 					<ul class="nav-link list">
 						<li class="nav-item">
-							<a href="index.html" class="nav-link link">Studio</a>
+							<a href="index.html" class="nav-link-icon link current">Studio</a>
 						</li>
 						<li class="nav-item">
-							<a href="portfolio.html" class="nav-link link">Portfolio</a>
+							<a href="portfolio.html" class="nav-link-icon link">Portfolio</a>
 						</li>
 						<li class="nav-item">
-							<a href="" class="nav-link link">Contacts</a>
+							<a href="" class="nav-link-icon link">Contacts</a>
 						</li>
 					</ul>
 				</nav>
@@ -52,7 +52,7 @@
 			<section class="hero">
 				<div class="conteiner">
 					<h1 class="hero-title">Effective Solutions for Your Business </h1>
-					<button type="button" class="hero-icon mybtn"><span class="hero-text">Order Service</span></button>
+					<button type="button" class="hero-icon mybtn" data-modal-open><span class="hero-text">Order Service</span></button>
 				</div>
 			</section>
 			<!--SPD-->
@@ -383,5 +383,17 @@
 				</div>
 			</div>
 		</footer>
+		<div class="backdrop" data-modal>
+			<div class="modal">
+				<button type="button" class="modal-close-btn" data-modal-close>
+					<svg class="modal-close-btn-icon" width="8" height="8">
+						<use href="./images/symbol-defs.svg#icon-close-black-18dp-2-1"></use>
+					</svg>
+					
+				</button>
+			</div>
+		</div>
+
+		<script src="./js/modal.js"></script>
 	</body>
 </html>
